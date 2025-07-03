@@ -34,8 +34,6 @@
         // 签名字符串
         String signatureData = sm3.digestHex(data);
 
-.. note:: 签名所用的方法是SM3
-
 签名过程用Node JS代码描述如下::
 
         ----------Node代码描述如下----------
