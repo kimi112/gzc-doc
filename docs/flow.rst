@@ -16,7 +16,7 @@
     "app-id": "d29f2fd7a8dc42b4",
     "nonce": 1678345454
 
-签名过程用Java、Node JS代码描述如下::
+签名过程用Java代码描述如下::
 
         ----------Java代码描述如下----------
         // 私钥文件路径
@@ -33,6 +33,10 @@
         SM3 sm3 = new SM3(securityKey.getBytes());
         // 签名字符串
         String signatureData = sm3.digestHex(data);
+
+.. note:: 签名所用的方法是SM3
+
+签名过程用Node JS代码描述如下::
 
         ----------Node代码描述如下----------
         const { SM3 } = require("gm-crypto"); const fetch = require("node-fetch");
@@ -51,4 +55,5 @@
         // 签名字符串
         const signatureData = SM3.digest(b1, undefined, "hex");
         console.log(signatureData: ${signatureData})
+
 .. note:: 签名所用的方法是SM3
