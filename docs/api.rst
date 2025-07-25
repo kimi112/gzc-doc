@@ -26,8 +26,8 @@ hash存证（sha256） - /attestation/hash
 =================  ======================================= ================
 label               文件标签                                    非必选
 hashItemList        HashItem对象列表                            必选
-HashItem.fileName   文件名                                     非必选
-HashItem.hash       文件hash                                   必选
+HashItem.fileName   文件名                                      必选
+HashItem.hash       文件hash                                    必选
 
 =================  ======================================= ================
 
